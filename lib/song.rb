@@ -13,9 +13,8 @@ class Song
   
   def self.create
     song = self.new
-    song.name = name
-    @@all << song
-      puts @@all.map{|song| song.name}
+    song.save
+    song
   end
 
 end
